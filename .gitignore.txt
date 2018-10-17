@@ -1,0 +1,3 @@
+/PeopleSearch/bin
+/PeopleSearch/obj
+*.suo

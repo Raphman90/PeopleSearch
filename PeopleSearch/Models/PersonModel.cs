@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace PeopleSearch.Models
+﻿namespace PeopleSearch.Models
 {
     public class PersonModel
     {

@@ -31,11 +31,22 @@ namespace PeopleSearch.Controllers
         }
 
         [HttpGet("search/{searchString}")]
-        public IEnumerable<PersonModel> SearchPeople([FromRoute]string searchString)
+        public IActionResult SearchPeople([FromRoute]string searchString)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-            return _context.People.Where(x => x.FirstName.ToLower().Contains(searchString.ToLower()) || 
-                                         x.LastName.ToLower().Contains(searchString.ToLower()));
+            var peopleList = _context.People.Where(x => x.FirstName.ToLower().Contains(searchString.ToLower()) ||
+                                      x.LastName.ToLower().Contains(searchString.ToLower()));
+
+            if (peopleList == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(peopleList);
         }
 
         // GET: api/Person/5

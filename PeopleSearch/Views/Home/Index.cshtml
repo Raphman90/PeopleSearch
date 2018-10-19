@@ -37,18 +37,21 @@
 <body>
     <h1>People Search</h1>
     <h3>Search</h3>
-    <form action="javascript:void(0);" method="GET" onsubmit="search($(searchName).val)">
+    <form action="javascript:void(0);" method="GET" onsubmit="search()">
         <input type="text" id="searchName" placeholder="name">
         <input type="submit" value="Search">
+    </form>
+    <form action="javascript:void(0);" method="GET" onsubmit="slowsearch()">
+        <input type="submit" value="Slow Search">
     </form>
 
     <div id="spoiler">
         <h3>Edit</h3>
         <form class="my-form">
             <input type="hidden" id="edit-id">
-            <input type="text" id="edit-first-name">
-            <input type="text" id="edit-last-name">
-            <input type="text" id="edit-age">
+            <input type="text" id="edit-first-name" required pattern="^\D+$" title="No numbers please">
+            <input type="text" id="edit-last-name" required pattern="^\D+$" title="No numbers please">
+            <input type="text" id="edit-age" required pattern="^[\d]*$" title="Numbers only please">
             <input type="text" id="edit-address">
             <input type="text" id="edit-interests">
             <input type="text" id="edit-image-location">
@@ -60,15 +63,20 @@
     <div id="addBlock">
         <h3>Add Person</h3>
         <form>
-            <input type="text" id="add-first-name" placeholder="First Name">
-            <input type="text" id="add-last-name" placeholder="Last Name">
-            <input type="text" id="add-age" placeholder="Age">
+            <input type="text" id="add-first-name" placeholder="First Name" required pattern="^\D+$" title="No numbers please">
+            <input type="text" id="add-last-name" placeholder="Last Name" required pattern="^\D+$" title="No numbers please">
+            <input type="text" id="add-age" placeholder="Age" required pattern="^[\d]*$" title="Numbers only please">
             <input type="text" id="add-address" placeholder="Address">
             <input type="text" id="add-interests" placeholder="Interests">
             <input type="text" id="add-image-location" placeholder="Image Location">
             <input type="submit" value="Add" onclick="addItem()">
-           
+
         </form>
+    </div>
+
+    <div id="loader" style="display: none;">
+        <img src="~/images/loading.gif"
+             style="height: 200px; width: 200px;" />
     </div>
 
     <p id="counter"></p>

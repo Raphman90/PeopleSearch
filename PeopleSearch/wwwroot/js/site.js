@@ -18,7 +18,15 @@ $(document).ready(function () {
 });
 
 
+function slowsearch() {
+    $('#people').empty();
+    $('#results').hide();
+    $('#loader').show();
+    setTimeout('search()', 3000);
+}
+
 function search() {
+    $('#loader').hide();
     $.ajax({
         type: 'GET',
         url: uri + "/search/" + $('#searchName').val(),

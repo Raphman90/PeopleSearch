@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raphman\\source\\repos\\PeopleSearch\\PeopleSearch\\PeopleSearch.csproj",
+      "projectUniqueName": "C:\\Users\\Raphman\\Desktop\\HCTest\\PeopleSearch\\PeopleSearch\\PeopleSearch.csproj",
       "projectName": "PeopleSearch",
-      "projectPath": "C:\\Users\\Raphman\\source\\repos\\PeopleSearch\\PeopleSearch\\PeopleSearch.csproj",
+      "projectPath": "C:\\Users\\Raphman\\Desktop\\HCTest\\PeopleSearch\\PeopleSearch\\PeopleSearch.csproj",
       "packagesPath": "C:\\Users\\Raphman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Raphman\\source\\repos\\PeopleSearch\\PeopleSearch\\obj\\",
+      "outputPath": "C:\\Users\\Raphman\\Desktop\\HCTest\\PeopleSearch\\PeopleSearch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

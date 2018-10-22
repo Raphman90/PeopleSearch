@@ -78,7 +78,6 @@ function addItem() {
         contentType: 'application/json',
         data: JSON.stringify(item),
         error: function (jqXHR, textStatus, errorThrown) {
-            alert('here');
         },
         success: function (result) {
             search();

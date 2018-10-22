@@ -70,7 +70,7 @@ using PeopleSearch.Models;
             WriteLiteral("\r\n<html>\r\n");
             EndContext();
             BeginContext(55, 634, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3335d5225f6a44a5bd4eb93a424cbb88", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "863a782dec27443382c5d7ab3cbce3af", async() => {
                 BeginContext(61, 621, true);
                 WriteLiteral(@"
     <meta charset=""UTF-8"">
@@ -120,12 +120,12 @@ using PeopleSearch.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(691, 2636, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cb9b7e429884eb79af47716107fe74a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e879de208426449aa7ae20edcc5c7384", async() => {
                 BeginContext(697, 55, true);
                 WriteLiteral("\r\n    <h1>People Search</h1>\r\n    <h3>Search</h3>\r\n    ");
                 EndContext();
                 BeginContext(752, 191, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a412a9ba4ed4a4380bd26516dcc7a9f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "493c98036d6d4705997e848aa935338d", async() => {
                     BeginContext(820, 116, true);
                     WriteLiteral("\r\n        <input type=\"text\" id=\"searchName\" placeholder=\"name\">\r\n        <input type=\"submit\" value=\"Search\">\r\n    ");
                     EndContext();
@@ -151,7 +151,7 @@ using PeopleSearch.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(949, 136, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "337d51d84a3a44e89f68eead4b746896", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e90461527f7c45f3af0f2ffa8e971afa", async() => {
                     BeginContext(1021, 57, true);
                     WriteLiteral("\r\n        <input type=\"submit\" value=\"Slow Search\">\r\n    ");
                     EndContext();
@@ -177,7 +177,7 @@ using PeopleSearch.Models;
                 WriteLiteral("\r\n\r\n    <div id=\"spoiler\">\r\n        <h3>Edit</h3>\r\n        ");
                 EndContext();
                 BeginContext(1144, 679, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05d8710210924591b342ca4941599fb7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b70d65fee797434a87b7d82edb6c7c9c", async() => {
                     BeginContext(1166, 650, true);
                     WriteLiteral(@"
             <input type=""hidden"" id=""edit-id"">
@@ -210,7 +210,7 @@ using PeopleSearch.Models;
                 WriteLiteral("\r\n    </div>\r\n\r\n    <div id=\"addBlock\">\r\n        <h3>Add Person</h3>\r\n        ");
                 EndContext();
                 BeginContext(1901, 701, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2644f70fc46e449497fe6aee16e0efc9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d7a9e19732948048d8da9a30a373c65", async() => {
                     BeginContext(1907, 688, true);
                     WriteLiteral(@"
             <input type=""text"" id=""add-first-name"" placeholder=""First Name"" required pattern=""^\D+$"" title=""No numbers please"">
@@ -241,7 +241,7 @@ using PeopleSearch.Models;
                 WriteLiteral("\r\n    </div>\r\n\r\n    <div id=\"loader\" style=\"display: none;\">\r\n        ");
                 EndContext();
                 BeginContext(2672, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "00256ff799dd445685e8bb1e65c0ffb8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "eb956f18abb348dc999b3b16a7322987", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

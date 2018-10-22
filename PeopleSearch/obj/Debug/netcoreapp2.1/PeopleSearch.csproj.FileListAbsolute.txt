@@ -61,3 +61,4 @@ C:\Users\Raphman\Desktop\HCTest\PeopleSearch\PeopleSearch\obj\Debug\netcoreapp2.
 C:\Users\Raphman\Desktop\HCTest\PeopleSearch\PeopleSearch\obj\Debug\netcoreapp2.1\PeopleSearch.dll
 C:\Users\Raphman\Desktop\HCTest\PeopleSearch\PeopleSearch\obj\Debug\netcoreapp2.1\PeopleSearch.pdb
 C:\Users\Raphman\Desktop\HCTest\PeopleSearch\PeopleSearch\obj\Debug\netcoreapp2.1\PeopleSearch.csproj.CopyComplete
+C:\Users\Raphman\Desktop\HCTest\PeopleSearch\PeopleSearch\obj\Debug\netcoreapp2.1\PeopleSearch.csprojAssemblyReference.cache

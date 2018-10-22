@@ -17,21 +17,21 @@ namespace PeopleSearch.Controllers
         {
             _context = context;
 
-            if(_context.People.Count() == 0)
+            if(!_context.People.Any())
             {
-                seedPeople(_context);
+                SeedPeople(_context);
             }
         }
 
         // GET: api/Person
         [HttpGet]
-        public IEnumerable<PersonModel> GetPeople()
+        public IActionResult GetPeople()
         {
-            return _context.People;
+            return Ok(_context.People);
         }
 
         [HttpGet("search/{searchString}")]
-        public IActionResult SearchPeople([FromRoute]string searchString)
+        public IActionResult RetrievePeople([FromRoute]string searchString)
         {
             if (!ModelState.IsValid)
             {
@@ -51,7 +51,7 @@ namespace PeopleSearch.Controllers
 
         // GET: api/Person/5
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetPerson([FromRoute] int id)
+        public async Task<IActionResult> RetrievePerson([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
@@ -70,7 +70,7 @@ namespace PeopleSearch.Controllers
 
         // PUT: api/Person/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPersonModel([FromRoute] int id, [FromBody] PersonModel personModel)
+        public async Task<IActionResult> UpdatePerson([FromRoute] int id, [FromBody] PersonModel personModel)
         {
             if (!ModelState.IsValid)
             {
@@ -105,7 +105,7 @@ namespace PeopleSearch.Controllers
 
         // POST: api/Person
         [HttpPost]
-        public async Task<IActionResult> PostPersonModel([FromBody] PersonModel personModel)
+        public async Task<IActionResult> CreatePerson([FromBody] PersonModel personModel)
         {
             if (!ModelState.IsValid)
             {
@@ -120,7 +120,7 @@ namespace PeopleSearch.Controllers
 
         // DELETE: api/Person/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePersonModel([FromRoute] int id)
+        public async Task<IActionResult> DeletePerson([FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
@@ -146,7 +146,7 @@ namespace PeopleSearch.Controllers
 
 
         //this is used to generate some people to search against.
-        private void seedPeople(PersonContext context)
+        private void SeedPeople(PersonContext context)
         {
             var personOne = new PersonModel
             {

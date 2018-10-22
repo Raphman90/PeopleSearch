@@ -18,7 +18,11 @@ In order to run the application, you must use version 15.7.3 or newer of Visual 
 
 you will also need to down load the .Net Core 2.1 SDK if you have not already, found here: https://www.microsoft.com/net/download
 
-after those two steps, you should open up the solution (PeopleSearch.sln) and press F5. The project should build and you should see the website. NOTE: running the project for the first time may give you a 500 error. I found that deleting the project and redownloading it solved that problem.
+NOTE: you may want to use a VM for this test as to not alter your Visual Studio environment.
+
+after those two steps, you should open up the solution (PeopleSearch.sln) and press F5. The project should build and you should see the website. you may see an SSL certificate warning, but go ahead and accept/install the certificate.
+
+NOTE: running the project for the first time may give you a 500 error. I found that deleting the project and redownloading it solved that problem.
 
 on the page you will see a text box to enter your search criteria as well as a number of fields that are used to Add your own people to the database.
 
